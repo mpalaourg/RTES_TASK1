@@ -13,7 +13,11 @@ To this end, three approaches have been implemented and tested.
 
 ## Execution
 
-To run the code, use:
+To execute the code, you first need to compile it using:
+```sh
+gcc main.c -o main
+```
+and then run using:
 ```sh
 ./main [Oper] [time] [delta]
 ```
