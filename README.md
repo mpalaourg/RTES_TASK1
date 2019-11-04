@@ -5,8 +5,11 @@ This is an *experimental* application developed as part of the course "Real Time
 
 The goal is to test the accuracy of sampling in embedded systems using different techniques, while trying to minimize the energy consumption of the system. 
 To this end, three approaches have been implemented and tested.
+
 	1. NonAdaptive	-> Sleep for the amount of requested seconds. [usleep() and sleep() used]
+	
 	2. Adaptive		-> Sleep for the amount of requested seconds, but check the divergence of the actual requested time and adapt for the next sample [usleep() and sleep() used]
+	
 	3. Interrupt	-> Set an interrupt and do other tasks, until the alarm rings.
 ---
 
@@ -19,8 +22,8 @@ To run the code, use:
 where:
 
  i. **Oper** is the requested implementation from the three described above
- 2. **time** is the total duration of the sampling in seconds
- 3. **delta** is the sampling period in seconds
+ ii. **time** is the total duration of the sampling in seconds
+ iii. **delta** is the sampling period in seconds
 
 all parameters are required.
 
